@@ -1,0 +1,30 @@
+.about {    
+    .bgAbout{
+        background: url("../../../public/bg-about.jpg") ;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background-size: cover ;
+        background-position: center center; 
+        width: 100%;
+        
+
+        .bgFilter {
+            background-color: rgba(0, 0, 0, 0.707);
+            
+        }
+    }
+
+    .teams {
+        background-color: #000000;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .about {    
+        .bgAbout{    
+            .bgFilter {
+                background-color: rgba(0, 0, 0, 0.707);
+                
+            }
+        }
+    }
+}

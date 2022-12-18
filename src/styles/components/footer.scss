@@ -1,0 +1,57 @@
+.footer {
+    border-top: 1px solid $blanc;
+    background-color: #021725;
+
+    p {
+        font-weight: 400;
+        font-size: 16px;
+    }
+
+    .socialIcon {
+
+        @include flex(flex, flex-end, center, row);
+
+        i {
+            margin: 0 15px;
+            font-size: 1.5em;
+        }
+
+        i:hover {
+            color: $hoverBg;
+        }
+
+        a {
+            color: $blanc;
+        }
+    }
+}
+
+@media screen and (max-width: 1024px){
+    .footer { 
+
+        p {
+            text-align: center;
+            font-size: 14px;
+            @include margin(0 0 15px 0);
+        }
+    
+        .socialIcon {
+    
+            @include flex(flex, center, center, row);
+    
+            i {
+                margin: 0 15px;
+                font-size: 1.5em;
+            }
+    
+            i:hover {
+                color: $hoverBg;
+            }
+    
+            a {
+                color: $blanc;
+            }
+        }
+    }
+}
+

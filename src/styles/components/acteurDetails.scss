@@ -1,0 +1,169 @@
+.acteurDetail {
+
+    .bgActeur {
+        background: url("../../../public/bg-acteur.png") ;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        background-size: cover;
+        background-position: center center;
+
+        .bgFilter {
+            background-color: rgba(0, 0, 0, 0.507);
+        }
+    }
+
+    h1 {
+        font-family: $montserrat;
+    }
+
+    .imgBox {
+        display: flex;
+        justify-content: flex-end;
+        img {
+            border-radius: 150px;
+            background-size: cover;
+            background-position: center center;
+        }
+    }
+    
+    .boxBio {
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 50px;
+    }
+
+    .infoBox {
+        padding-left: 50px;
+        text-align: left;
+
+        h1 {
+            padding-top: 125px;
+            text-align: left;
+        }
+        
+        h4 {
+            text-align: left;
+        }
+
+        p {
+            padding: 0 15px;
+            letter-spacing: 1px;
+        }
+    }
+
+    .filmographie {
+
+        li {
+            cursor: pointer;
+            border-top: 1px solid rgb(8, 156, 255);
+            padding: 10px;
+            box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        }
+
+        .itemFilm {
+          
+            border-radius: 10px;
+            margin: 10px 0;
+        }
+
+        .itemFilm:hover {
+            background-color: #0d4f69 ;
+            transition: all 0.4s ease-in-out;
+        }
+    }
+
+     /* css voir plus et mois */
+     .read-more-state {
+        display: none;
+      }
+      
+      .read-more-target {
+        opacity: 0;
+        max-height: 0;
+        font-size: 0;
+        transition: .25s ease;
+      }
+      
+      .read-more-state:checked ~ .read-more-wrap .read-more-target {
+        opacity: 1;
+        font-size: inherit;
+        max-height: 999em;
+      }
+      
+      .read-more-state ~ .read-more-trigger:before {
+        content: 'Lire Plus';
+      }
+      
+      .read-more-state:checked ~ .read-more-trigger:before {
+        content: 'Lire Moins';
+      }
+      
+      .read-more-trigger {
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        text-align: center;
+        @include btnStyle();
+        margin: 25px auto 0;
+        padding: 5px 15px;
+        font-family: $roboto;
+        color: $blanc;
+        font-size: 1em;
+        line-height: 2;
+        border-radius: 50px;
+      }
+
+      .read-more-trigger:hover {
+        @include btnStyleHover();
+      }
+
+    .biography {
+        padding: 30px;
+        background-color: #021725;
+    }
+
+    .btnBox {
+        display: flex;
+        justify-content: center;
+
+        .btnVoirPlus {
+            @include btnStyle();
+        }
+
+        .btnVoirPlus:hover {
+          @include btnStyleHover();
+        }
+    }
+   
+}
+
+@media screen and (max-width: 1024px){
+    .acteurDetail {
+        .imgBox {
+            justify-content: center;
+        }
+
+        .infoBox {
+            padding-left: 0px;
+            text-align: left;
+    
+            h1 {
+                padding-top: 30px;
+                text-align: center;
+                font-size: 1.5rem;
+            }
+            
+            h4 {
+                text-align: center;
+                margin-bottom: 15px;
+            }
+    
+            p {
+                padding: 0 15px;
+                letter-spacing: 1px;
+                text-align: center;
+            }
+        }    
+    }
+    
+}

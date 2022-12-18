@@ -1,0 +1,93 @@
+.categorie {
+    
+    .selectBox {
+        text-align: center;
+
+        select {
+            margin-top: 50px;
+            background-color: #1A85AE;
+            color: $blanc;
+            appearance: none;
+            cursor: pointer;
+            padding: 15px 25px;
+            outline: 0;
+            border-radius: 50px;
+            box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+        }
+
+        /* Remove IE arrow */
+        select::-ms-expand {
+        display: none;
+        }
+    }
+
+    .boxBtn {
+        @include flex(flex, center ,center,row);
+
+        .paginationBtn {
+            @include btnStyle();
+            cursor: pointer;
+            width: 200px;
+            text-align: center;
+            margin: 0 10px;
+            padding: 10px;
+            font-family: $poppins;
+        }
+
+        .paginationBtn:hover {
+            @include btnStyleHover();
+        }
+    }
+
+    .radio {
+        width: 40%;
+        margin: 60px auto 25px;
+        background: #d9dada;
+        padding: 20px 0;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        position: relative;
+    }
+    
+    .radio input {
+        width: auto;
+        height: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 10px 10px;
+        @include btnStyle();
+        color: $blanc;
+        font-size: 14px;
+        font-family: $poppins;
+        transition: all 100ms linear;
+    }
+    
+    .radio input:checked {
+        background-image: linear-gradient(180deg, #95d891, #74bbad);
+        color: #fff;
+        box-shadow: 0 1px 1px #0000002e;
+        text-shadow: 0 1px 0px #79485f7a;
+    }
+    
+    .radio input:before {
+        content: attr(label);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 1024px) {
+    .categorie {
+        .radio {
+            width: 100%;
+            margin: 0 auto ; 
+            border-radius: 0px;
+        }
+    }   
+}

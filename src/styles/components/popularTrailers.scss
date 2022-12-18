@@ -1,0 +1,122 @@
+.popularTrailers {
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+        width: auto !important;
+        margin-bottom: 50px;
+      
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      
+      .swiper-slide {
+        width: 80%;
+      }
+      
+      .swiper-slide:nth-child(2n) {
+        width: 60%;
+      }
+      
+      .swiper-slide:nth-child(3n) {
+        width: 40%;
+      }
+
+      .radio {
+        width: 30%;
+        margin: 25px auto 0;
+        background: #d9dada;
+        padding: 4px;
+        border-radius: 50px;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        position: relative;
+    }
+
+    .boxBtn {
+        @include flex(flex, center ,center,row);
+
+        .paginationBtn {
+            @include hoverBtn($hoverBg);
+            cursor: pointer;
+            width: 200px;
+            text-align: center;
+            margin: 0 10px;
+            padding: 10px;
+            font-family: $poppins;
+        }
+    }
+    
+    .radio input {
+        width: auto;
+        height: 100%;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        outline: none;
+        cursor: pointer;
+        border-radius: 5px;
+        padding: 15px 25px;
+        margin: 10px 10px;
+        background: #792a51;
+        color: $blanc;
+        font-size: 14px;
+        font-family: $poppins;
+        transition: all 100ms linear;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    }
+    
+    .radio input:checked {
+        background-image: linear-gradient(180deg, #95d891, #74bbad);
+        color: #fff;
+        box-shadow: 0 1px 1px #0000002e;
+        text-shadow: 0 1px 0px #79485f7a;
+    }
+    
+    .radio input:before {
+        content: attr(label);
+        display: inline-block;
+        text-align: center;
+        width: 100%;
+    }    
+}
+
+@media screen and (max-width: 1024px) {
+    .popularTrailers {
+        .radio {
+            width: 100%;
+            margin: 0 auto ; 
+        }
+
+        .searchBar {
+
+            input {
+                width: 90%;
+                border-radius: 50px
+            }
+
+        }
+    }   
+}

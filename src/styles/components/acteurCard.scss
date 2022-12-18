@@ -1,0 +1,25 @@
+.acteurCard {
+
+      .card {
+        height: 250px;
+        width: 175px; 
+        background-size: cover;  
+        background-position: center center;
+        background-repeat: no-repeat;
+      }
+
+      .card:hover h2 {
+        background: rgba(0, 0, 0, 0.589);
+        opacity: 1;
+      }
+      
+      h2 {
+        font-family: $poppins;
+        color: #fff;
+        margin: 10px auto;
+        padding: 10px;
+        text-align: center;
+        opacity: 0;
+        transition: opacity 1s;
+      }      
+}

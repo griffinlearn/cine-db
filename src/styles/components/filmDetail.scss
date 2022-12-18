@@ -1,0 +1,107 @@
+.filmDetail {
+
+    h2 {
+        @include margin(25px 0);
+    }
+
+    .headerBG {
+        background-size: cover;
+        background-position: center center;
+        background-attachment: fixed;
+    }
+
+    .infoSection {
+        background-color: rgba(0, 0, 0, 0.80);
+        position: relative;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    }
+
+    .boxStyleSynopsis {
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 50px;
+        background-color: #021725;
+    }
+
+    .boxStyle {
+        margin: 50px auto;
+        box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+        border-radius: 50px;
+    }
+
+    h1 {
+        font-size: 2.5vw;
+    }
+
+    .category {
+        font-size: 1vw;
+        font-weight: 500;
+        margin: 0 10px;
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .category:hover {
+        @include hoverBtn($hoverBg);
+        
+    }
+
+    p {
+        padding: 10px 0;
+    }
+
+    .swiper {
+        width: 100%;
+        height: 100%;
+      }
+      
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: transparent;
+      
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+      
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+}
+
+@media screen and (max-width: 1024px) {
+    .filmDetail {
+        .headerBG {
+            background-size: cover;
+            background-position: center center;
+            background-attachment: unset;
+        }
+
+        h1 {
+            font-size: 5vw;
+        }
+
+        .category {
+            font-size: 3vw;
+        }
+
+        .infoBox {
+            text-align: center;
+        }
+
+    }
+}

@@ -1,0 +1,88 @@
+.section {
+    ::-webkit-scrollbar{
+        height: 10px;
+    }
+    
+    ::-webkit-scrollbar-track {
+        background: transparent;
+    }
+    
+    ::-webkit-scrollbar-thumb{
+        background: #1A85AE;
+        border-radius: 16px;
+    }
+
+    h3 {
+        font-family: $poppins;
+        letter-spacing: 1px;
+    }
+
+    
+    .btnContainer {
+        @include flex(flex, space-between, center, row);
+        margin-bottom: 16px;
+    }
+
+    h3 {
+        padding: 16px;
+        margin-bottom: 16px;
+    }
+  
+
+    .btn:hover{
+       @include hoverBtn($hoverBg);
+       transition: all 0.4s ease-in-out;
+       border-radius: 1rem;
+    } 
+
+    .btn {
+        width: 150px;
+        padding: 10px;
+        margin: 0 15px;
+        font-family: $montserrat;
+        font-weight: 600;
+        letter-spacing: 2px;
+        @include hoverBtn(#024E70);
+        font-size: 1.2rem;
+        color: $blanc;
+          border-radius: 1rem;
+          padding: 0.5rem 2rem;
+          transition: all 150ms ease;
+          font-family: inherit;
+        &:active {
+          box-shadow: 0 0 0 fade_out(#b8b9be, 0.1),
+                    0 0 0 #fff !important;
+        }
+        &:focus {
+          color: rgb(228, 189, 15);
+          outline:none !important;
+        }
+      }
+
+}
+
+@media screen and (max-width: 930px) {
+    .section {
+        .flex {
+            flex-direction: column;
+        }
+
+        h3 {
+            padding: 0 16px;
+            margin-bottom: 0px;
+        }
+
+        .btnContainer {
+            margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .section {
+        h3 {
+            font-size: 1em;
+            padding: 0 16px;
+        }
+    }
+}
