@@ -20,7 +20,7 @@ const SerieDetail = () => {
   const urlBackdrop =
     "https://www.themoviedb.org/t/p/w1920_and_h800_multi_faces/";
   // state movie
-  const URL = `https://api.themoviedb.org/3/tv/${location.state.id}?api_key=476f1098f88d57106479e06870fbbaf1&language=fr-Fr`;
+  const URL = `https://api.themoviedb.org/3/tv/${location.state.id}?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US`;
   const [detail, setDetail] = useState({});
   const [category, setCategory] = useState([]);
   // state video
@@ -30,11 +30,11 @@ const SerieDetail = () => {
   const youtubeUrl = "https://www.youtube.com/watch?v=";
 
   // acteur state
-  const urlActeur = `https://api.themoviedb.org/3/tv/${location.state.id}/credits?api_key=476f1098f88d57106479e06870fbbaf1&language=fr-Fr`;
+  const urlActeur = `https://api.themoviedb.org/3/tv/${location.state.id}/credits?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US`;
   const [acteurs, setActeurs] = useState([]);
 
   // fetch séries similaire
-  const urlFSerieSimilaire = `https://api.themoviedb.org/3/tv/${location.state.id}/similar?api_key=476f1098f88d57106479e06870fbbaf1&language=fr-FR&page=1`;
+  const urlFSerieSimilaire = `https://api.themoviedb.org/3/tv/${location.state.id}/similar?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US&page=1`;
   const [series, setSerie] = useState([]);
 
   useEffect(() => {

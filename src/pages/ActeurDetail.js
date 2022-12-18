@@ -11,7 +11,7 @@ const ActeurDetail = () => {
   // urlImg
   const urlImg = "https://image.tmdb.org/t/p/w300";
   // state acteur details
-  const urlActeur = `https://api.themoviedb.org/3/person/${location.state.id}?api_key=476f1098f88d57106479e06870fbbaf1&language=fr-FR`;
+  const urlActeur = `https://api.themoviedb.org/3/person/${location.state.id}?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US`;
   const [acteur, setActeur] = useState([]);
   // state acteur celebre pour
   const urlFilmActeur = `https://api.themoviedb.org/3/person/${location.state.id}/combined_credits?api_key=476f1098f88d57106479e06870fbbaf1&sort_by=release_date.desc`;

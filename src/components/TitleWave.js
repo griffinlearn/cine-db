@@ -4,7 +4,7 @@ const TitleWave = ({ title }) => {
   return (
     <div className="titleWave">
       <div class="row">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12">
           <h3 class="animate-charcter">{title}</h3>
         </div>
       </div>

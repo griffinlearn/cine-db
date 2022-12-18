@@ -22,7 +22,7 @@ const ActeurPopulaire = () => {
   return (
     <div className="acteurPolulaire">
       <div className="text-3xl font-bold pt-5 px-12" data-aos="zoom-in">
-        <TitleWave title={"ACTEURS POPULAIRES"} />
+        <TitleWave title={"Populare Actor"} />
       </div>
       <Section>
         {acteurs.map((acteur) => {

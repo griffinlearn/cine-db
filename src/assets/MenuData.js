@@ -1,16 +1,16 @@
 export const MenuData = [
   {
-    title: "Accueil",
+    title: "Home",
     url: "/",
     icon: "fa-solid fa-house-user",
   },
   {
-    title: "Catégories",
+    title: "Categories",
     url: "categorie",
     icon: "fa-regular fa-folder-open",
   },
   {
-    title: "Recherche",
+    title: "Search",
     url: "search",
     icon: "fa-solid fa-magnifying-glass",
   },

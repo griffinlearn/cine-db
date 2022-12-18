@@ -10,9 +10,9 @@ const ListComplet = ({
   return (
     <div data-aos="zoom-in">
       <li className="text-center itemFilm" onClick={onClickFilm}>
-        <b>Titre : </b>
+        <b>Title : </b>
         {title || original_title || name} <br />
-        <b>À jouer le rôle de : </b>
+        <b>Played as : </b>
         {character ? character : "Rôle inconnu"}
       </li>
     </div>

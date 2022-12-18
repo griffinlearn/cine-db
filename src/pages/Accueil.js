@@ -18,7 +18,7 @@ const Accueil = () => {
 
   const customAPI = () => {
     const apiKey = "476f1098f88d57106479e06870fbbaf1";
-    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=fr-fr`;
+    const apiUrl = `https://api.themoviedb.org/3/movie/popular?api_key=${apiKey}&language=en-US`;
 
     axios.get(apiUrl).then((res) => {
       setImg(res.data.results);

@@ -41,10 +41,10 @@ const Categorie = () => {
   const urlChoix = `https://api.themoviedb.org/3/discover/${choix}?api_key=476f1098f88d57106479e06870fbbaf1&page=${currentPage}&with_genres=${idChoice}`;
   const [data, setData] = useState([]);
   //fetch categorie film
-  const urlGenresMovie = `https://api.themoviedb.org/3/genre/movie/list?api_key=476f1098f88d57106479e06870fbbaf1&language=en-EN`;
+  const urlGenresMovie = `https://api.themoviedb.org/3/genre/movie/list?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US`;
   const [genresMovie, setGenresMovie] = useState([]);
   //fetch categorie séries
-  const urlGenresTv = `https://api.themoviedb.org/3/genre/tv/list?api_key=476f1098f88d57106479e06870fbbaf1&language=en-EN`;
+  const urlGenresTv = `https://api.themoviedb.org/3/genre/tv/list?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US`;
   const [genresTv, setGenresTv] = useState([]);
 
   useEffect(() => {

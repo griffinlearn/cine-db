@@ -22,7 +22,7 @@ const Search = () => {
   const [choix, setChoix] = useState("");
   //state query
   const [query, setQuery] = useState("");
-  const urlSearch = `https://api.themoviedb.org/3/search/${choix}?api_key=476f1098f88d57106479e06870fbbaf1&language=fr-FR&page=${currentPage}&query=${query}`;
+  const urlSearch = `https://api.themoviedb.org/3/search/${choix}?api_key=476f1098f88d57106479e06870fbbaf1&language=en-US&page=${currentPage}&query=${query}`;
   console.log(urlSearch);
   const [films, setFilms] = useState([]);
 
