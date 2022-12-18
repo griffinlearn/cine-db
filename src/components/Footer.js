@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="container-xxl p-5">
         <div className="row">
           <div className="col-12 text-center">
-            <p>Cine-DB © 2022 Tous droits réservés</p>
+            <p>Cine-DB © 2022 All rights reserved</p>
           </div>
           <div className="col-0"></div>
         </div>

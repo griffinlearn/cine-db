@@ -149,7 +149,7 @@ const FilmDetail = () => {
                 ) : (
                   <div>
                     <h5 className="text-left text-xl font-bold m-0 p-0 infoBox">
-                      Le Synopsis n'est pas disponible pour le moment.
+                      The Synopsis is not available at the moment.
                     </h5>
                   </div>
                 )}
@@ -159,19 +159,19 @@ const FilmDetail = () => {
               <h2 className="text-3xl font-bold mt-3 mb-4">Informations</h2>
               {/* info section */}
               <p>
-                <b>Statut : </b>
+                <b>Status : </b>
                 {detail.status ? detail.status : "Inconnue"}
               </p>
               <p>
-                <b>Date de sortie : </b>
+                <b>Release date : </b>
                 {detail.release_date ? detail.release_date : "Inconnue"}
               </p>
               <p>
-                <b>Durée : </b>
+                <b>Duration : </b>
                 {detail.runtime ? detail.runtime : "Inconnue"} Min
               </p>
               <p className="text-uppercase">
-                <b className="text-capitalize">Langue d'origine : </b>
+                <b className="text-capitalize">Original language : </b>
                 {detail.original_language
                   ? detail.original_language
                   : "Inconnue"}
@@ -188,7 +188,7 @@ const FilmDetail = () => {
               className="text-3xl font-bold text-center pt-3 px-4 px-lg-5"
               data-aos="zoom-in"
             >
-              Distribution
+              Cast
             </h2>
             <Section>
               {acteurs.slice(0, 12).map((acteur) => {
@@ -215,7 +215,7 @@ const FilmDetail = () => {
                 className="text-3xl font-bold mb-5 text-center"
                 data-aos="zoom-in"
               >
-                Bandes Annonces
+                Trailers
               </h2>
               {trailers.length ? (
                 <div>
@@ -239,7 +239,7 @@ const FilmDetail = () => {
               ) : (
                 <div>
                   <h5 className="text-center text-xl font-bold m-0 p-0">
-                    La bande annonce n'est pas disponible pour le moment.
+                    The trailer is not available at this time.
                   </h5>
                 </div>
               )}
@@ -250,7 +250,7 @@ const FilmDetail = () => {
       {/* film similaire */}
       <div className="container-xl mb-5">
         <h2 className="text-3xl font-bold mb-5 text-center" data-aos="zoom-in">
-          Films Similaires
+          Similar Movies
         </h2>
         <Section>
           {films

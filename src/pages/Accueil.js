@@ -57,10 +57,10 @@ const Accueil = () => {
             />
           </SwiperSlide>
         ))}
-        <div className="contentSlider" data-aos="flip-up">
+        <div className="contentSlider m-0 p-0" data-aos="flip-up">
           <img className="logoHero" src="cine-db.png" alt="logo srmflix" />
-          <h1>L'art du cinéma</h1>
-          <h4>Des centaines de films et séries à découvrir</h4>
+          <h1>The Best Of The Cinema</h1>
+          <h4 className="p-0">Hundreds of films and series to discover</h4>
         </div>
       </Swiper>
       <PopularMovie />

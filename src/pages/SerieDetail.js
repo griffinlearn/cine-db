@@ -149,7 +149,7 @@ const SerieDetail = () => {
                 ) : (
                   <div>
                     <h5 className="text-left text-xl font-bold m-0 p-0 infoBox">
-                      Le Synopsis n'est pas disponible pour le moment
+                      The Synopsis is not available at the moment.
                     </h5>
                   </div>
                 )}
@@ -159,19 +159,19 @@ const SerieDetail = () => {
               <h2 className="text-3xl font-bold mt-3 mb-4">Informations</h2>
               {/* info section */}
               <p>
-                <b>Statut : </b>
+                <b>Status : </b>
                 {detail.status ? detail.status : "Inconnue"}
               </p>
               <p>
-                <b>Date de sortie : </b>
+                <b>Release date : </b>
                 {detail.first_air_date ? detail.first_air_date : "Inconnue"}
               </p>
               <p>
-                <b>Durée : </b>
+                <b>Duration : </b>
                 {detail.runtime ? detail.runtime + " Min" : " Inconnue"}
               </p>
               <p className="text-uppercase">
-                <b className="text-capitalize">Langue d'origine : </b>
+                <b className="text-capitalize">Original language : </b>
                 {detail.original_language
                   ? detail.original_language
                   : "Inconnue"}
@@ -188,7 +188,7 @@ const SerieDetail = () => {
               className="text-3xl font-bold text-center px-4 pt-5 px-lg-5"
               data-aos="zoom-in"
             >
-              Distribution
+              Cast
             </h2>
             <Section>
               {acteurs.slice(0, 12).map((acteur) => {
@@ -211,9 +211,7 @@ const SerieDetail = () => {
           {/* slider bande annonce */}
           <div className="bandeAnnonce " data-aos="zoom-in">
             <div className="container-xl p-4 p-lg-5 ">
-              <h2 className="text-3xl font-bold mb-5 text-center ">
-                Bandes Annonces
-              </h2>
+              <h2 className="text-3xl font-bold mb-5 text-center ">Trailers</h2>
               {trailers.length ? (
                 <div>
                   <Swiper
@@ -236,7 +234,7 @@ const SerieDetail = () => {
               ) : (
                 <div>
                   <h5 className="text-center text-xl font-bold m-0 p-0">
-                    La bande annonce n'est pas disponible pour le moment.
+                    The trailer is not available at this time.
                   </h5>
                 </div>
               )}
@@ -247,7 +245,7 @@ const SerieDetail = () => {
       {/* film similaire */}
       <div className="container-xl py-5 mb-3">
         <h2 className="text-3xl font-bold m-0 text-center" data-aos="zoom-in">
-          Séries Similaires
+          Similar Movies
         </h2>
         <Section>
           {series

@@ -28,7 +28,8 @@
     .boxBio {
         margin: 50px auto;
         box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
-        border-radius: 50px;
+        border-left: 10px solid #BF994D;
+        border-right: 10px solid #BF994D;
     }
 
     .infoBox {
@@ -54,7 +55,8 @@
 
         li {
             cursor: pointer;
-            border-top: 1px solid rgb(8, 156, 255);
+            border-left: 10px solid #BF994D;
+            border-right: 10px solid #BF994D;         
             padding: 10px;
             box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         }
@@ -62,7 +64,7 @@
         .itemFilm {
           
             border-radius: 10px;
-            margin: 10px 0;
+            margin: 25px 0;
         }
 
         .itemFilm:hover {
@@ -90,11 +92,11 @@
       }
       
       .read-more-state ~ .read-more-trigger:before {
-        content: 'Lire Plus';
+        content: 'Read More';
       }
       
       .read-more-state:checked ~ .read-more-trigger:before {
-        content: 'Lire Moins';
+        content: 'Read Less';
       }
       
       .read-more-trigger {

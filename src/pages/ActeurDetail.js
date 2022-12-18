@@ -54,18 +54,18 @@ const ActeurDetail = () => {
             <div className="col-12 col-lg-7 infoBox" data-aos="zoom-in">
               <h1 className="pb-0">{acteur.name}</h1>
               <h4 className="pt-2">
-                {acteur.gender === 2 ? "Acteur" : "Actrice"}
+                {acteur.gender === 2 ? "Actor" : "Actress"}
               </h4>
               <p>
-                <b>Date de naissance : </b>
-                {acteur.birthday ? acteur.birthday : "Inconnue"}
+                <b>Date of Birth : </b>
+                {acteur.birthday ? acteur.birthday : "Unknown"}
               </p>
               <p>
-                <b>Lieu de naissance : </b>
-                {acteur.place_of_birth ? acteur.place_of_birth : "Inconnue"}
+                <b>Place of birth : </b>
+                {acteur.place_of_birth ? acteur.place_of_birth : "Unknown"}
               </p>
               <p>
-                <b>Genre : </b> {acteur.gender === 2 ? "Homme" : "Femme"}
+                <b>Gender : </b> {acteur.gender === 2 ? "Man" : "Woman"}
               </p>
             </div>
           </div>
@@ -74,7 +74,7 @@ const ActeurDetail = () => {
       {/* Biography */}
       <div className="mx-3">
         <div className="container-xl biography boxBio p-5" data-aos="zoom-in">
-          <h2 className="text-3xl font-bold text-center pb-5">Biographie</h2>
+          <h2 className="text-3xl font-bold text-center pb-5">Biography</h2>
           {acteur.biography ? (
             <div>
               <input type="checkbox" className="read-more-state" id="post-1" />
@@ -89,7 +89,7 @@ const ActeurDetail = () => {
           ) : (
             <div>
               <h5 className="text-center text-xl font-bold">
-                La biographie n'est pas disponible pour le moment.
+                The biography is not available at the moment.
               </h5>
             </div>
           )}
@@ -98,7 +98,7 @@ const ActeurDetail = () => {
       {/* film dans lequel il a joué */}
       <div className="container-xxl filmBox">
         <h2 className="text-3xl font-bold text-center py-5" data-aos="zoom-in">
-          Connu pour
+          Famous for
         </h2>
         <Section>
           {films
@@ -127,7 +127,7 @@ const ActeurDetail = () => {
       {/* section liste films */}
       <div className="container-xl filmographie">
         <h2 className="text-3xl font-bold text-center py-5" data-aos="zoom-in">
-          Filmographie
+          Filmography
         </h2>
         <ul>
           {films
@@ -150,7 +150,7 @@ const ActeurDetail = () => {
         {/* btn voir plus */}
         <div className="btnBox mb-5">
           <div className="btnVoirPlus font-bold p-3 m-5" onClick={voirPlus}>
-            Voir Plus
+            See More
           </div>
         </div>
       </div>

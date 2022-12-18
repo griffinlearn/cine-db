@@ -135,8 +135,8 @@ const Categorie = () => {
 
           <div className="contentSlider" data-aos="flip-up">
             <img className="logoHero" src="cine-db.png" alt="logo srmflix" />
-            <h1>Catégories</h1>
-            <h4>Vos films et séries préférés</h4>
+            <h1>Categories</h1>
+            <h4 className="p-0">Your favorite movies and series</h4>
           </div>
         </Swiper>
       </div>
@@ -147,10 +147,10 @@ const Categorie = () => {
           onChange={handleChoix}
           data-aos="zoom-in"
         >
-          <input label="Films" type="radio" value="movie" name="gender" />
-          <input label="Séries" type="radio" value="tv" name="gender" />
+          <input label="Movies" type="radio" value="movie" name="gender" />
+          <input label="Tv Shows" type="radio" value="tv" name="gender" />
           <input
-            label="Annuler le filtre"
+            label="Cancel"
             type="radio"
             id="other"
             name="gender"
@@ -166,7 +166,7 @@ const Categorie = () => {
       {choix && (
         <div className="selectBox">
           <select value={id} onChange={handleOnChange}>
-            <option value="">Sélectionnez une catégorie</option>
+            <option value="">Select a category</option>
             {choix === "movie"
               ? genresMovie.map((genreMovie) => {
                   return (
@@ -241,7 +241,7 @@ const Categorie = () => {
             className="text-center text-xl font-bold my-5 py-3"
             data-aos="zoom-in"
           >
-            Aucune catégorie selectionnée pour le moment.
+            No category selected for the moment.
           </h5>
         </div>
       )}
@@ -254,25 +254,27 @@ const Categorie = () => {
               value={"precedent"}
               onClick={handlePagination}
             >
-              Précédente
+              Previous
             </button>
           )}
+          {/* btn for category from filmdetail or seriedetail */}
           {data.length < 20 ? null : (
             <button
               className="paginationBtn p-3"
               value={"suivante"}
               onClick={handlePagination}
             >
-              Suivante
+              Next
             </button>
           )}
+          {/* btn from catogory page */}
           {films.length < 20 ? null : (
             <button
               className="paginationBtn p-3"
               value={"suivante"}
               onClick={handlePagination}
             >
-              Suivante
+              Next
             </button>
           )}
         </div>

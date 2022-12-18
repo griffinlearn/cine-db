@@ -97,8 +97,8 @@ const Search = () => {
 
           <div className="contentSlider" data-aos="flip-up">
             <img className="logoHero" src="cine-db.png" alt="logo srmflix" />
-            <h1>Recherchez</h1>
-            <h4>Votre recherche en un clic !!!</h4>
+            <h1>Search</h1>
+            <h4>Your search in one click !!!</h4>
           </div>
         </Swiper>
       </div>
@@ -108,10 +108,10 @@ const Search = () => {
         onChange={handleChoix}
         data-aos="zoom-in"
       >
-        <input label="Films" type="radio" value="movie" name="gender" />
-        <input label="Séries" type="radio" name="gender" value="tv" />
+        <input label="Movies" type="radio" value="movie" name="gender" />
+        <input label="Tv Show" type="radio" name="gender" value="tv" />
         <input
-          label="Annuler le filtre"
+          label="Cancel"
           type="radio"
           name="gender"
           value=""
@@ -125,9 +125,7 @@ const Search = () => {
         <div className="searchBar mt-5" data-aos="zoom-in">
           <input
             placeholder={
-              choix === "movie"
-                ? "Recherchez votre film"
-                : "Recherchez votre série"
+              choix === "movie" ? "Find your movie" : "Find your series"
             }
             onChange={handleOnChange}
           />
@@ -163,7 +161,7 @@ const Search = () => {
             className="text-center text-xl font-bold my-5 py-3 px-3"
             data-aos="zoom-in"
           >
-            Choisissez votre catégorie et faites votre recherche.
+            Choose your category and do your research.
           </h5>
         </div>
       )}
@@ -176,7 +174,7 @@ const Search = () => {
               value={"precedent"}
               onClick={handlePagination}
             >
-              Précédente
+              Previous
             </button>
           )}
           {films.length < 20 ? null : (
@@ -185,7 +183,7 @@ const Search = () => {
               value={"suivante"}
               onClick={handlePagination}
             >
-              Suivante
+              Next
             </button>
           )}
         </div>

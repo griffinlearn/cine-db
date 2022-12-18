@@ -6,6 +6,7 @@
 
     .navigation {
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+        border-top: 2px solid #976d19;
         background-color: #021725;
         width: 100%;
         height: 80px;
@@ -35,12 +36,14 @@
 
     a {
         color: $blanc;
+        letter-spacing: 1px;
         font-family: $roboto;
         padding: 15px;
     }
 
     a:hover {
         @include hoverBtn(#1A85AE);
+        letter-spacing: 2px;
     }
 
     i {
@@ -49,7 +52,7 @@
     }
 
     .active {
-        background-color: #1A85AE;
+        background-color: #976d19;
         box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(255, 255, 255, 0.1) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
         border-radius: 50px;
         padding: 15px;
@@ -81,7 +84,7 @@
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
-            background-color: $bodyBg;
+            background-color: #021725;
             height: auto;
             width: 100%;
             position: absolute;
@@ -98,5 +101,6 @@
             left: 0%;
             border-radius: 0px;
         }
+        
     }
 }
