@@ -136,22 +136,26 @@ const Search = () => {
         <div className="container-fluid mt-3 px-0 px-lg-5 pt-3 pb-5 mx-auto">
           <div className="row mx-auto">
             <div className="col-12 d-flex flex-wrap justify-content-center wrap mx-auto px-0">
-              {films.map((film) => {
-                return (
-                  <MovieCard
-                    {...film}
-                    key={film.id}
-                    onClickFilm={() =>
-                      navigation(
-                        choix === "movie" ? "/filmdetail" : "/seriedetail",
-                        {
-                          state: { id: film.id },
-                        }
-                      )
-                    }
-                  />
-                );
-              })}
+              {films
+                .sort(
+                  (a, b) => new Date(b.release_date) - new Date(a.release_date)
+                )
+                .map((film) => {
+                  return (
+                    <MovieCard
+                      {...film}
+                      key={film.id}
+                      onClickFilm={() =>
+                        navigation(
+                          choix === "movie" ? "/filmdetail" : "/seriedetail",
+                          {
+                            state: { id: film.id },
+                          }
+                        )
+                      }
+                    />
+                  );
+                })}
             </div>
           </div>
         </div>

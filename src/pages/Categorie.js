@@ -193,43 +193,53 @@ const Categorie = () => {
               <div className="col-12 d-flex flex-wrap justify-content-center wrap mx-auto px-0">
                 {/* ternaire choix des affichage depuis page categori ou page filmDetail || serieDetail */}
                 {choix
-                  ? data.map((film) => {
-                      return (
-                        <MovieCard
-                          {...film}
-                          key={film.id}
-                          idCategorie={idMovieCard}
-                          onClickFilm={() =>
-                            navigation(
-                              choix === "movie"
-                                ? "/filmdetail"
-                                : "/seriedetail",
-                              {
-                                state: { id: film.id },
-                              }
-                            )
-                          }
-                        />
-                      );
-                    })
-                  : films.map((film) => {
-                      return (
-                        <MovieCard
-                          {...film}
-                          key={film.id}
-                          onClickFilm={() =>
-                            navigation(
-                              choice === "movie"
-                                ? "/filmdetail"
-                                : "/seriedetail",
-                              {
-                                state: { id: film.id },
-                              }
-                            )
-                          }
-                        />
-                      );
-                    })}
+                  ? data
+                      .sort(
+                        (a, b) =>
+                          new Date(b.release_date) - new Date(a.release_date)
+                      )
+                      .map((film) => {
+                        return (
+                          <MovieCard
+                            {...film}
+                            key={film.id}
+                            idCategorie={idMovieCard}
+                            onClickFilm={() =>
+                              navigation(
+                                choix === "movie"
+                                  ? "/filmdetail"
+                                  : "/seriedetail",
+                                {
+                                  state: { id: film.id },
+                                }
+                              )
+                            }
+                          />
+                        );
+                      })
+                  : films
+                      .sort(
+                        (a, b) =>
+                          new Date(b.release_date) - new Date(a.release_date)
+                      )
+                      .map((film) => {
+                        return (
+                          <MovieCard
+                            {...film}
+                            key={film.id}
+                            onClickFilm={() =>
+                              navigation(
+                                choice === "movie"
+                                  ? "/filmdetail"
+                                  : "/seriedetail",
+                                {
+                                  state: { id: film.id },
+                                }
+                              )
+                            }
+                          />
+                        );
+                      })}
               </div>
             </div>
           </div>
