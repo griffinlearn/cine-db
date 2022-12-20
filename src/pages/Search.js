@@ -98,7 +98,7 @@ const Search = () => {
           <div className="contentSlider" data-aos="flip-up">
             <img className="logoHero" src="cine-db.png" alt="logo srmflix" />
             <h1>Search</h1>
-            <h4>Your search in one click !!!</h4>
+            <h4 className="p-0 m-0">Your search in one click !!!</h4>
           </div>
         </Swiper>
       </div>

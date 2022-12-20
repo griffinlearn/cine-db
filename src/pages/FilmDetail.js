@@ -238,7 +238,7 @@ const FilmDetail = () => {
                 </div>
               ) : (
                 <div>
-                  <h5 className="text-center text-xl font-bold m-0 p-0">
+                  <h5 className="text-center text-xl font-bold m-0 p-5">
                     The trailer is not available at this time.
                   </h5>
                 </div>
