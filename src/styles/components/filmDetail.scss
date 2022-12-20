@@ -2,6 +2,13 @@
 
     h2 {
         @include margin(25px 0);
+        letter-spacing: 5px;
+    }
+
+    .titleStyle{
+        border-top: 1px solid #976d19;
+        border-radius: 20px;
+        margin: 0 15px;
     }
 
     .headerBG {

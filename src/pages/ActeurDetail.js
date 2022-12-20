@@ -97,7 +97,10 @@ const ActeurDetail = () => {
       </div>
       {/* film dans lequel il a joué */}
       <div className="container-xxl filmBox">
-        <h2 className="text-3xl font-bold text-center py-5" data-aos="zoom-in">
+        <h2
+          className="text-3xl font-bold text-center py-5 titleStyle"
+          data-aos="zoom-in"
+        >
           Famous for
         </h2>
         <Section>
@@ -126,7 +129,10 @@ const ActeurDetail = () => {
       </div>
       {/* section liste films */}
       <div className="container-xl filmographie">
-        <h2 className="text-3xl font-bold text-center py-5" data-aos="zoom-in">
+        <h2
+          className="text-3xl font-bold text-center py-5 mt-5 titleStyle"
+          data-aos="zoom-in"
+        >
           Filmography
         </h2>
         <ul>

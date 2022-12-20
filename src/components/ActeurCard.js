@@ -4,7 +4,7 @@ const ActeurCard = ({ profile_path, name, onClickActeur }) => {
   const urlImgActeur = "https://image.tmdb.org/t/p/w200/";
 
   return (
-    <div className="acteurCard pt-3">
+    <div className="acteurCard py-3">
       <div className="wrapper d-inline-flex p-1">
         <div className="cards row" data-aos="zoom-in">
           <div className="containerCard">

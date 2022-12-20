@@ -185,7 +185,7 @@ const SerieDetail = () => {
         <div className="col-12 p-0">
           <div className="casting container-xl pb-3">
             <h2
-              className="text-3xl font-bold text-center px-4 pt-5 px-lg-5"
+              className="text-3xl font-bold text-center py-4 mb-0 px-4 px-lg-5 titleStyle"
               data-aos="zoom-in"
             >
               Cast
@@ -210,8 +210,10 @@ const SerieDetail = () => {
         <div className="col-12">
           {/* slider bande annonce */}
           <div className="bandeAnnonce " data-aos="zoom-in">
-            <div className="container-xl p-4 p-lg-5 ">
-              <h2 className="text-3xl font-bold mb-5 text-center ">Trailers</h2>
+            <h2 className="text-3xl font-bold pt-5 mt-5 text-center titleStyle">
+              Trailers
+            </h2>
+            <div className="container-xl px-4 px-lg-3">
               {trailers.length ? (
                 <div>
                   <Swiper
@@ -244,7 +246,10 @@ const SerieDetail = () => {
       </div>
       {/* film similaire */}
       <div className="container-xl py-5 mb-3">
-        <h2 className="text-3xl font-bold m-0 text-center" data-aos="zoom-in">
+        <h2
+          className="text-3xl font-bold py-5 text-center titleStyle"
+          data-aos="zoom-in"
+        >
           Similar Movies
         </h2>
         <Section>
