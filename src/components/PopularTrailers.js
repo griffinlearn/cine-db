@@ -17,7 +17,7 @@ const PopularTrailers = ({ categorie }) => {
 
   return (
     <div className="popularTrailers mb-5" data-aos="zoom-in">
-      <div className="text-3xl font-bold pt-5 px-12" data-aos="zoom-in">
+      <div className="text-3xl font-bold pt-5" data-aos="zoom-in">
         <TitleWave title={"Popular Trailers"} />
       </div>
       <Section>

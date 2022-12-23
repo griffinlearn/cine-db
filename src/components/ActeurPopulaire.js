@@ -21,7 +21,7 @@ const ActeurPopulaire = () => {
 
   return (
     <div className="acteurPolulaire">
-      <div className="text-3xl font-bold pt-5 px-12" data-aos="zoom-in">
+      <div className="text-3xl font-bold pt-5" data-aos="zoom-in">
         <TitleWave title={"Populare Actors"} />
       </div>
       <Section>

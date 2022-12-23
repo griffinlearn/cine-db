@@ -3,7 +3,7 @@ import React from "react";
 const Section = ({ children, btn1, btn2 }) => {
   return (
     <div className="section">
-      <section className="py-[5px] px-10">
+      <section className="py-[5px]">
         <div className="flex items-center gap-5">
           <div className="btnContainer">
             {btn1}

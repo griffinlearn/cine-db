@@ -22,7 +22,7 @@ const PopularSerie = () => {
 
   return (
     <div>
-      <div className="text-3xl font-bold pt-5 px-12" data-aos="zoom-in">
+      <div className="text-3xl font-bold pt-5" data-aos="zoom-in">
         <TitleWave title={"Popular Tv-Show"} />
       </div>
       <Section>

@@ -3,9 +3,9 @@ import React from "react";
 const TitleWave = ({ title }) => {
   return (
     <div className="titleWave">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="animate-charcter">{title}</h3>
+      <div className="row">
+        <div className="col-md-12">
+          <h3>{title}</h3>
         </div>
       </div>
     </div>

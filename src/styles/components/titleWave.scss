@@ -1,16 +1,14 @@
 .titleWave{
   padding: 25px;
   border-left: 10px solid #BF994D;
-  margin: 25px 0;
+  margin: 25px 40px;
   letter-spacing: 2px;
-
 }
 
 @media screen and (max-width:1024px) {
   .titleWave {
-    width: 100%;
     letter-spacing: 1px;
-
+    margin: 25px 20px;
   }
 
  
